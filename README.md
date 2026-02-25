@@ -59,6 +59,17 @@ Fix issues interactively or configure rules in `eslint.config.js`.
 
 Feel free to open issues or PRs. Keep changes focused and add tests or screenshots where helpful.
 
+## Deployment (GitHub Pages)
+
+This repository is setup to deploy the production build to GitHub Pages using GitHub Actions. The Vite `base` has been set to `/Animate/` to match the repository name.
+
+How it works:
+
+- On push to `main`, the workflow builds the site (`npm run build`) and publishes the generated `dist/` folder to the `gh-pages` branch using `peaceiris/actions-gh-pages`.
+- The site will be available at `https://<your-github-username>.github.io/Animate/` once the workflow completes and GitHub Pages is enabled for the repository.
+
+If you prefer a local deploy step using `gh-pages`, you can add the `gh-pages` package and a `deploy` script to `package.json` instead.
+
 ## License
 
 This repository does not include a license file. Add one if you intend to publish or share this project publicly.
