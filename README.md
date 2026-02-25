@@ -1,16 +1,64 @@
-# React + Vite
+# Itz-Fizz
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React application scaffolded with Vite. Built with React 19, Tailwind CSS and Anime.js for lightweight animations and fast local development.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fast development server powered by Vite with HMR
+- Modern React (v19) and JSX support
+- Tailwind CSS integration
+- Small animation utilities using Anime.js
+- ESLint configured for consistent code style
 
-## React Compiler
+## Prerequisites
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 18 or newer
+- npm (or yarn / pnpm)
 
-## Expanding the ESLint configuration
+## Quick Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies and start the dev server:
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:5173 in your browser to view the app.
+
+## Available Scripts
+
+- `npm run dev` — Start Vite development server
+- `npm run build` — Build the production bundle
+- `npm run preview` — Preview the production build locally
+- `npm run lint` — Run ESLint on the project
+
+These scripts are defined in `package.json`.
+
+## Project Structure
+
+- `index.html` — App entry HTML
+- `vite.config.js` — Vite configuration
+- `src/main.jsx` — App bootstrap and React root
+- `src/App.jsx` — Main application component
+- `src/ItsFizzHeroAnime.jsx` — Animation / hero component
+- `src/assets/` — Static assets (images, icons, etc.)
+- `public/` — Static files served at root
+
+## Linting
+
+Run ESLint with:
+
+```bash
+npm run lint
+```
+
+Fix issues interactively or configure rules in `eslint.config.js`.
+
+## Contributing
+
+Feel free to open issues or PRs. Keep changes focused and add tests or screenshots where helpful.
+
+## License
+
+This repository does not include a license file. Add one if you intend to publish or share this project publicly.
